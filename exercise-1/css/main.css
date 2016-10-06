@@ -44,7 +44,9 @@ see http://stackoverflow.com/questions/6871996/css-two-inline-block-width-50-ele
 	}
 
 	#photo {
-		background-image: url('../imgs/peacock.png');
+		background-image: url('../imgs/peacock.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
 	}
 
 }

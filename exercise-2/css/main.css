@@ -4,18 +4,39 @@
 
 
 /* Assign styles here */
-.flex-container {
+.flexbox-container {
+	display: flex;
 	min-height: 200px;
 	border: 1px solid black;
-	align-items: vertical;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flex-column {
+	flex-basis:100%;
+	padding:20px;
+}
+
+.content {
+	background-color: tomato;
+	text-align: center;
+	font-size: 4rem;
+	height:100%;
+}
+
+@media screen and (min-width:768px) {
+	.flex-column {
+		flex-basis:50%;
+	}
 }
 
 
-
-
-
-
-
+@media screen and (min-width:992px) {
+	.flex-column {
+		flex-basis:25%;
+	}
+}
 
 
 
